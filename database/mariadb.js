@@ -8,13 +8,12 @@ const sequelize = new Sequelize('curso', 'root', '', {
     acquire: 30000,
     idle: 10000
   },
-  operatorsAliases: false
+  operatorsAliases: false,
+  define: { timestamps: false }
 });
 
-sequelize.query("SELECT * FROM alunos").then(myTableRows => {
+sequelize.query("SELECT * FROM aluno").then(myTableRows => {
   console.log(myTableRows)
 });
 
-module.exports = {
-  sequelize
-}
+module.exports = exports = sequelize;
