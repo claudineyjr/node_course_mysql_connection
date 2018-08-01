@@ -1,14 +1,14 @@
-CREATE DATABASE `curso`;
+CREATE DATABASE `nodeangular`;
 
-USE `curso`;
+USE `nodeangular`;
 
-CREATE TABLE `curso`.`aluno`(
+CREATE TABLE `nodeangular`.`aluno`(
   `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `name` VARCHAR(250) NOT NULL,
   `birthday` DATE NOT NULL
 );
 
-INSERT INTO `curso`.`aluno`
+INSERT INTO `nodeangular`.`aluno`
 	(`name`, `birthday`)
 VALUES
 	('Claudiney Junior', '1988-10-24'),

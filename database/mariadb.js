@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('curso', 'root', '', {
-  host: 'localhost',
+const sequelize = new Sequelize('nodeangular', 'nodeangular', '', {
+  host: 'nodeangular.mysql.dbaas.com.br',
   dialect: 'mysql',
   pool: {
     max: 5,

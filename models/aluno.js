@@ -6,7 +6,8 @@ const schema = {
     type: INTEGER,
     allowNull: false,
     field: 'id',
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true,
   },
   name: {
     type: STRING,
@@ -20,6 +21,6 @@ const schema = {
   }
 };
 
-const Aluno = connection.define('aluno', schema, { tableName: 'aluno'});
+const Aluno = connection.define('Aluno', schema, { tableName: 'aluno'});
 
 module.exports = exports = Aluno;
