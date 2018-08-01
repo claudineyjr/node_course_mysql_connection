@@ -15,6 +15,14 @@ const getById = (req) => {
     })
 }
 
+const deleteById = (req) => {
+  const options = parseFindOptions(req);
+  return Aluno.destroy(options)
+    .then((result) => {
+      return result;
+    });
+}
+
 const parseFindOptions = (req) => {
   const { id } = req.params;
   const result = {
@@ -34,6 +42,7 @@ const post = (req) => {
 
 
 module.exports = {
+  deleteById,
   get,
   getById,
   post,
